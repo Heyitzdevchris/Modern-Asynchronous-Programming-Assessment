@@ -33,7 +33,7 @@ All of the functions you will need to fill in are included in this file.
 >
 > This function should take in a constellation object that includes an ```id```. It should then return a ```PUT``` request with ```axios``` to update that resource with the new contents.
 >
-> ```
+> ```javascript
 > const constellation = {
 >    id: "HwLvy2S",
 >    name: "Ursa Minor",
@@ -49,7 +49,7 @@ All of the functions you will need to fill in are included in this file.
 >
 > If that request fails, it should return a rejected promise with the following result. Assume ```id``` is the value of the  constellation's ```id``` property.
 >
-> ```
+> ```javascript
 > {
 >   error: 'Updating constellations (id: ${id})
 >  failed.';
@@ -67,7 +67,7 @@ All of the functions you will need to fill in are included in this file.
 >
 > First, this function should take an array of objects. If an array is *not provided*, the function should return a rejected promise with an object. That object should have an ```error``` key that includes a relevant message.
 >
-> ```
+> ```javascript
 > bulkImport({}).catch((error) => {
 >    console.log(error);
 >    //> { error: "Inputted argument must be an array." }
@@ -78,7 +78,7 @@ All of the functions you will need to fill in are included in this file.
 >
 > Before making the ```PUT``` request, you must first validate that all of the constellations are valid, according to the ```isValid()``` function. If any constellation is not, the function should return a rejected promise with an object and an error message, like above.
 >
-> ```
+> ```javascript
 > const constellations = [{ starsWithPlanets: 4
 >}];
 > bulkImport(constellations).catch((error) => {
