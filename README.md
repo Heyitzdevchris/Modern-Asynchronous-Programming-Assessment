@@ -24,7 +24,7 @@ All of the functions you will need to fill in are included in this file.
 
 > ## Functions
 >
-> ```update()```
+> ### ```update()```
 >
 >|                      |                      |
 >|   -----------------  |   ------------------ |
@@ -56,7 +56,7 @@ All of the functions you will need to fill in are included in this file.
 >} 
 >```
 >
-> ```bulkImport()```
+> ### ```bulkImport()```
 >
 >|                      |                      |
 >|   -----------------  |   ------------------ |
@@ -74,7 +74,7 @@ All of the functions you will need to fill in are included in this file.
 >});
 > ```
 >
-> **Note**:You can use ```Array.isArray()``` to determine whether or not the inputted argument is an array.
+> **Note**: You can use ```Array.isArray()``` to determine whether or not the inputted argument is an array.
 >
 > Before making the ```PUT``` request, you must first validate that all of the constellations are valid, according to the ```isValid()``` function. If any constellation is not, the function should return a rejected promise with an object and an error message, like above.
 >
